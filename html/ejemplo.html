@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reordenar Elementos con Bootstrap</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Primer elemento: cambia el orden en diferentes puntos de interrupción -->
+            <div class="col-12 col-md-6 order-md-2">
+                <div class="p-3 border bg-light">
+                    <h2>Elemento 1</h2>
+                    <p>Este es el primer elemento que cambia de lugar.</p>
+                </div>
+            </div>
+
+            <!-- Segundo elemento: cambia el orden en diferentes puntos de interrupción -->
+            <div class="col-12 col-md-6 order-md-1">
+                <div class="p-3 border bg-light">
+                    <h2>Elemento 2</h2>
+                    <p>Este es el segundo elemento que cambia de lugar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JS de Bootstrap (necesario para algunas funcionalidades) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

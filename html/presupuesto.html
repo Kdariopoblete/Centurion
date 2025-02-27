@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../multimedia/logo/logo_ventana.png" type="image/x-icon">
+    <!-- titulo  -->
+    <title>Centurión</title>
+    <!-- estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <!-- scripts -->
+    <script defer src="../js/main.js"></script>
+</head>
+
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center"style="width: 95%;">
+                <!-- Logo a la izquierda utilizando las clases de Bootstrap -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../multimedia/logo/logo.png" alt="logo" id="logo" class="rounded img-fluid">
+                </a>
+
+                <!-- Botón de hamburguesa -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Enlaces a la derecha -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="./somos.html">Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link active navbar-link" href="./presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="./contacto.html">Postulate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- principal -->
+    <main class="container mb-3  ">
+        <div class="col-md-12 text-center" id="sociales">
+            <h2 class="title-galeria">Presupuesto</h2>
+        </div>
+        <div class="row justify-content-center align-items-center" style="height: 15vh;">
+            <div class="col-12 text-center" id="faja">
+                <p>
+                    "Llena el siguiente formulario para calcular presupuesto, nos pondremos en contacto a la brevedad via mail"</p>
+
+            </div></div><br>
+        <form>
+            <!-- tipo  -->
+            <div class="mb-3">
+                <label for="tipoEvento" class="form-label">Tipo de evento:</label>
+                <select class="form-select" id="tipoEvento" required>
+                    <option value="">Seleccionar</option>
+                    <option value="casamiento">Casamiento</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <!-- locacion -->
+            <div class="mb-3">
+                <label for="locacion" class="form-label">Locación:</label>
+                <select class="form-select" id="locacion" required>
+                    <option value="">Seleccionar</option>
+                    <option value="rawson">Rawson</option>
+                    <option value="capital">Capital</option>
+                    <option value="rivadavia">Rivadavia</option>
+                    <option value="pocito">Pocito</option>
+                </select>
+            </div>
+
+            <!--  invitados -->
+            <div class="mb-3">
+                <label for="cantidadInvitados" class="form-label">Cantidad de invitados:</label>
+                <input type="number" class="form-control" id="cantidadInvitados" required>
+            </div>
+
+            <!-- duracion  -->
+            <div class="mb-3">
+                <label for="duracionEvento" class="form-label">Duración del evento (Horas):</label>
+                <input type="number" class="form-control" id="duracionEvento" required>
+            </div>
+
+            <!--  voucher -->
+            <div class="mb-3">
+                <label for="voucher" type="email">Correo:</label>
+                <input type="text" class="form-control" id="voucher">
+            </div>
+            <br>
+            <!-- mensaje -->
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje adicional:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+
+            <!--  enviar -->
+            <button type="submit" class="btn btn-enviar mb-3">Enviar</button>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row social-icons">
+                <!-- contacto -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Contacto</h4>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=542644853601" target="_blank">
+                                <img src="../multimedia/ico/call.png" class="redes" alt="Teléfono"> Teléfono: +54 -
+                                2644853601
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:elitecatering@gmail.com" target="_blank">
+                                <img src="../multimedia/ico/email.png" class="redes" alt="Email"> Email:
+                                elitecatering@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/w1kHihwY1TNsiRVM9" target="_blank">
+                                <img src="../multimedia/ico/place.png" class="redes" alt="Ubicación"> Ubicación: Ig. de
+                                la Roza 590 (O), Ciudad de San Juan - Rivadavia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--   redes  -->
+                <div class="col-md-6">
+                    <h4>Redes Sociales</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com/tupagina" target="_blank">
+                                <img src="../multimedia/ico/facebook.png" class="redes" alt="Facebook"> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tuinstagram" target="_blank">
+                                <img src="../multimedia/ico/instagram.png" class="redes" alt="Instagram"> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- formulario  -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Regístrate para recibir novedades</h4>
+                            <form id="registro-novedades">
+                                <div class="input-group mb-3">
+                                    <label for="emailInput" class="visually-hidden">Tu dirección de correo
+                                        electrónico</label>
+                                    <input type="email" class="form-control borde" required id="emailInput"
+                                        placeholder="Tu dirección de correo electrónico"
+                                        aria-label="Tu dirección de correo electrónico"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <!-- btn  modal -->
+                                        <button type="button" class="btn borde enviar" id="btnEnviar">
+                                            <img src="../multimedia/ico/avion.png" class="redes" alt="">
+                                        </button>
+                                        <!-- modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body" id="modalBody">
+                                                        <!-- js -->
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Cerrar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

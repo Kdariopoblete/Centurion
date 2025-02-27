@@ -1,0 +1,184 @@
+/* reset codigo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* var colores */
+:root {
+    --principal: #545454;
+    --secundario: #fbff00;
+}
+#faja {
+    background-color:#545454 ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*padding-top: 1%;*/
+    
+}
+
+h1,
+h4,
+h2 {
+    color:yellow;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    padding: 10px;
+    border-radius: 20px 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 1%;
+    color: #FFFFFF;
+    background-color: #545454;
+}
+.full-width-screen {
+    position: relative;
+}
+
+.full-width-screen .inner {
+    position: absolute;
+    left: 0;
+    width: 100vw; /* 100% del ancho de la ventana */
+    text-align: center; /* Alineación de texto al centro */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    padding: 20px; /* Opcional: Añade padding para espaciado */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+
+/* Agrega esto a tu archivo style.css o en la sección de estilos en tu HTML */
+.navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+}
+.map-container {
+    height: 200px; /* Ajusta la altura de acuerdo con el espacio disponible */
+    width: 100%; /* Asegura que el mapa ocupe todo el ancho del contenedor */
+}
+
+.card-body {
+    padding: 0; /* Quita el padding para que el mapa ocupe el máximo espacio */
+}
+
+@media (min-width: 768px) {
+    .map-container {
+        height: 300px; /* Ajusta la altura para pantallas más grandes */
+    }
+}
+
+@media (max-height: 600px) {
+    .map-container {
+        height: 150px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+.Paula{
+    padding-right: 3% ;
+    align-items: center; 
+    padding-left: 10%;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.opacidad-imagen {
+    opacity: 0.6;
+}
+
+.card-title {
+    color: #FFFFFF;
+}
+
+.title-galeria {
+    color: var(--secundario);
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/*  altura maxima img carrusel */
+.img-carru img {
+    max-height: 70vh;
+}
+.center {
+    width: 50%; /* Ancho del div */
+    margin: 0 auto; /* Márgenes automáticos en los lados */
+}
+
+/* logo */
+#logo {
+    width: 40vh;
+}
+
+header {
+    background-color: var(--principal);
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+}
+.somos{
+    border-radius: 15px;
+    height: 30vh;
+}
+
+/*  iconos footer */
+.redes {
+    height: 15px;
+}
+
+/* Efecto tarjetas */
+.tarjetas .card:hover .card-img-top {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+/*  título en las tarjetas  */
+.card .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: var(--principal);
+}
+
+/* sin viñetas de las listas  */
+ul {
+    list-style: none;
+    background-color: var(--principal);
+}
+
+/* sin subrayado de los enlaces  */
+.social-icons a {
+    color: rgb(255, 255, 255);
+    background-color: var(--principal);
+    text-decoration: none;
+}
+
+.enviar {
+    border: solid 2px;
+}
+
+.btn-enviar {
+    background-color: var(--principal);
+}
+#mouse{
+    width: 25px;
+   }
+
+footer {
+    background-color: var(--principal);
+    padding: 20px;
+    
+}
